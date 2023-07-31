@@ -27,3 +27,13 @@ const paragraph2 = document.createElement("p");
 paragraph2.textContent = "ME TOO!";
 newdiv.appendChild(paragraph2);
 container.appendChild(newdiv);
+
+const btn = document.querySelector("#btn");
+
+btn.addEventListener("click", function (e) {
+	console.log(e.target);
+});
+
+btn.addEventListener("click", function (e) {
+	e.target.style.background = "blue";
+});
